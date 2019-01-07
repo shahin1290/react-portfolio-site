@@ -7,16 +7,16 @@ import './css/tailwind.css';
 
 const HelloWorld = () => {
     return (
-        <div className="min-h-screen">
-            <div className="flex flex-col w-full fixed pin-l pin-y">
+        <div className="page-wrapper">
+            <div className="page-content">
                 <Header />
-                <div className="px-4 pt-4 flex-1 overflow-y-scrol">
+                <div className="content-wrapper">
                     <Hello />
                 </div>
                 <Footer />
             </div >
         </div >
-)
+    )
 };
 
 ReactDOM.render(<HelloWorld />, document.getElementById("app"))
